@@ -1,0 +1,216 @@
+:root {
+      --primary: #164e63;
+      --primary-dark: #0f3b4a;
+      --accent: #0ea5a4;
+      --background: #1c3a6b;
+      --card: #ffffff;
+      --text: #18323b;
+      --muted: #607780;
+      --error: #b42318;
+      --success: #176b43;
+      --border: #c9d8dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #7c89a3;
+      line-height: 1.5;
+    }
+	
+	h1{
+		text-align: center;
+	}
+
+    .container {
+      width: min(92%, 760px);
+      margin: 40px auto;
+    }
+
+    .card {
+      background: #edf0f5;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 59, 74, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 2rem;
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      color: var(--muted);
+    }
+
+    .required-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .required { color: var(--error); }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0 0 24px;
+    }
+
+    legend {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary);
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #dbe9ec;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .full { grid-column: 1 / -1; }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.15);
+    }
+
+    input:invalid:not(:placeholder-shown), select:invalid, textarea:invalid {
+      border-color: #e0a39e;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .help {
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-top: 5px;
+    }
+
+    .security {
+      background: #f2f8f9;
+      border: 1px solid #d5e6e9;
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .security-question {
+      font-weight: bold;
+      margin: 0 0 8px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font: inherit;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-primary, .btn-secondary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+
+    .message {
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      display: none;
+    }
+
+    .message.error {
+      display: block;
+      background: #fff0ee;
+      color: var(--error);
+      border: 1px solid #f1c0ba;
+    }
+
+    .warning {
+      color: #8a4b08;
+      background: #fff8e8;
+      border: 1px solid #efd69c;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 8px;
+      display: none;
+      font-size: .9rem;
+    }
+
+    .confirmation {
+      display: none;
+    }
+
+    .confirmation h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .review {
+      background: #f6fafb;
+      border: 1px solid #d8e6e9;
+      border-radius: 10px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+
+    .review-row {
+      padding: 9px 0;
+      border-bottom: 1px solid #e0eaec;
+    }
+
+    .review-row:last-child { border-bottom: 0; }
+
+    .review-label {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+      .full { grid-column: auto; }
+      .buttons { flex-direction: column; }
+      button { width: 100%; }
+    }

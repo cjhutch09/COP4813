@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Christopher Hutchison </h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub">
+        <li><a href="../Assignment1/index.html">Assignment 1</a></li>
+        <li><a href="../index.html">Assignment 2</a></li>
+		<li><a href="">Assignment 3</a></li>
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+  <main class="container">
+    <section class="card" id="formSection">
+      <h1>Information form</h1>
+      <p class="required-note"><span class="required">*</span> Indicates a required field</p>
+
+      <div id="errorMessage" class="message" role="alert"></div>
+
+      <form id="contactForm" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="grid">
+            <div>
+              <label for="firstname">First Name <span class="required">*</span></label>
+              <input type="text" id="firstname" name="firstname"
+                     autocomplete="given-name" required
+                     pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}"
+                     title="Enter a valid first name.">
+            </div>
+
+            <div>
+              <label for="lastname">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastname" name="lastname"
+                     autocomplete="family-name" required
+                     pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}"
+                     title="Enter a valid last name.">
+            </div>
+
+            <div>
+              <label for="birthdate">Birth Date <span class="required">*</span></label>
+              <input type="date" id="birthdate" name="birthdate" required>
+              <div id="birthWarning" class="warning" role="alert"></div>
+				</div>
+
+            <div>
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone"
+                     placeholder="(000) 000-0000"
+                     inputmode="numeric" autocomplete="tel"
+                     maxlength="14" required
+                     pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                     title="Use the format (000) 000-0000.">
+              <div class="help">10-digit phone number including area code.</div>
+            </div>
+
+            <div class="full">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email"
+                     autocomplete="email" required
+                     placeholder="name@example.com">
+              <div class="help">Example: name@domain.extension</div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mailing Address</legend>
+          <div class="grid">
+            <div class="full">
+              <label for="address">Street Address <span class="required">*</span></label>
+              <input type="text" id="address" name="address"
+                     autocomplete="street-address" required
+                     pattern="[0-9]+[A-Za-z0-9 .#'-]{2,}"
+                     title="Enter a street number and street name.">
+            </div>
+
+            <div>
+              <label for="city">City <span class="required">*</span></label>
+              <input type="text" id="city" name="city"
+                     autocomplete="address-level2" required
+                     pattern="[A-Za-zÀ-ÖØ-öø-ÿ .'-]{2,}"
+                     title="Enter a valid city.">
+            </div>
+
+            <div>
+              <label for="state">State <span class="required">*</span></label>
+              <select id="state" name="state" autocomplete="address-level1" required>
+                <option value="">Select a state</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+                <option>Arkansas</option><option>California</option><option>Colorado</option>
+                <option>Connecticut</option><option>Delaware</option><option>Florida</option>
+                <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option>
+                <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
+                <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
+                <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option>
+                <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+                <option>New Mexico</option><option>New York</option><option>North Carolina</option>
+                <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
+                <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
+                <option>Texas</option><option>Utah</option><option>Vermont</option>
+                <option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="zip">ZIP Code <span class="required">*</span></label>
+              <input type="text" id="zip" name="zip"
+                     autocomplete="postal-code" inputmode="numeric"
+                     required pattern="[0-9]{5}(-[0-9]{4})?"
+                     maxlength="5" placeholder="12345"
+                     title="Enter a 5-digit ZIP code">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">Your Message <span class="required">*</span></label>
+          <textarea id="message" name="message" required minlength="5"
+                    maxlength="2000"
+                    placeholder="Enter your message here..."></textarea>
+          <div class="help">5–2,000 characters.</div>
+        </fieldset>
+
+        <fieldset class="security">
+          <legend>Confirmation</legend>
+          <p class="security-question">Security question: What is 3 + 4? <span class="required">*</span></p>
+          <label for="securityAnswer">Answer</label>
+          <input type="text" id="securityAnswer" name="securityAnswer"
+                 inputmode="numeric" required pattern="7"
+                 title="Enter 12.">
+          <div class="help">This simple question helps confirm that the form was completed by a person.</div>
+        </fieldset>
+
+        <div class="buttons">
+          <button type="reset" class="btn-secondary">Clear Form</button>
+          <button type="submit" class="btn-primary">Review Information</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card confirmation" id="confirmationSection">
+      <h2>Confirm Your Information</h2>
+      <p>Please review the information below. If everything is correct, select <strong>Confirm &amp; Submit</strong>.</p>
+
+      <div class="review" id="review"></div>
+
+      <div class="buttons">
+        <button type="button" class="btn-secondary" id="editButton">Edit Information</button>
+        <button type="button" class="btn-primary" id="confirmButton">Confirm &amp; Submit</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="contact_form.js"></script>
+</body>
+</html>

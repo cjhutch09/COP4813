@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 4</title>
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+
+
+    <!-- chart source -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Christopher Hutchison </h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub">
+        <li><a href="../Assignment1/index.html">Assignment 1</a></li>
+        <li><a href="../index.html">Assignment 2</a></li>
+		<li><a href="../Assignment3/index.html">Assignment 3</a></li>
+		<li><a href="">Assignment 4</a></li>
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+    <main class="container">
+
+        <h1>Equation plotter</h1>
+
+        <p class="equation">
+            y = A sin(Bx) + C cos(Dx)
+        </p>
+
+        <section class="controls">
+
+            <div class="input-group">
+                <label for="a">A:</label>
+                <input type="number" id="a" value="5" step="0.1">
+            </div>
+
+            <div class="input-group">
+                <label for="b">B:</label>
+                <input type="number" id="b" value="1" step="0.1">
+            </div>
+
+            <div class="input-group">
+                <label for="c">C:</label>
+                <input type="number" id="c" value="3" step="0.1">
+            </div>
+
+            <div class="input-group">
+                <label for="d">D:</label>
+                <input type="number" id="d" value="2" step="0.1">
+            </div>
+
+
+            <div class="input-group">
+                <label for="xmin">X Minimum:</label>
+                <input type="number" id="xmin" value="-10" step="1">
+            </div>
+
+            <div class="input-group">
+                <label for="xmax">X Maximum:</label>
+                <input type="number" id="xmax" value="10" step="1">
+            </div>
+
+        </section>
+
+        <button id="plotButton">Plot Equation</button>
+
+        <p id="result"></p>
+
+        <section class="chart-container">
+            <canvas id="myChart"></canvas>
+        </section>
+
+    </main>
+
+    <script src="plot.js"></script>
+
+</body>
+</html>

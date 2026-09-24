@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Assignment 4 </h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub" id= "assignments">
+
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+    <body>
+
+<div class="container">
+
+ <h1>Spirograph Generator</h1>
+ 
+	<div class="controls"> 
+		<div class="input-group"> 
+		<label for="rValue"> r : </label> 
+		<input type="number" id="rValue" value="84" min="1" max="149" step="1">
+		<button type="button" id="randomR">Random</button>
+		</div> 
+		<div class="input-group">
+		<label for="oValue"> O : </label>
+		<input type="number" id="oValue" value="37" min="1" max="100" step="1">
+		<button type="button" id="randomO">Random</button>
+		</div>
+		<div class="input-group">
+		<label> Draw speed : </label>
+		<input type="number" id="speed" value="0.05" min="0.01" max="1" step="0.01">
+		</div>
+		<p id="errorMessage"></p> 
+	</div> 
+	
+	<div class="color-controls"> 
+	<label for="lineColor"> Drawing Color: </label> 
+	<input type="color" id="lineColor" value="#0000ff" > 
+	<button type="button" id="randomColor"> Random Color </button>
+	</div>
+	
+	<div class="canvas-container"> 
+		<canvas id="canvas" width="800" height="800">
+		</canvas> <button id="startButton" class="start-button"> Start Drawing </button>
+	</div> 
+	
+ </div>
+    <script src="../menu.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

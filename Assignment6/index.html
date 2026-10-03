@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+
+
+
+<body>
+
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Assignment 6</h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub" id= "assignments">
+
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+</br>
+<h3> Houston Rockets random sample player data </h3>
+	  <a class="lnk" href="./file.json">View JSON File</a>
+  <main class="container">
+
+
+    <section class="data-card">
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="name">Player <span>↕</span></th>
+              <th data-sort="season">Season <span>↕</span></th>
+              <th data-sort="year">Year <span>↕</span></th>
+              <th data-sort="avg_scoring_ppg">PPG <span>↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="playerTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="table-footer" id="resultSummary"></div>
+    </section>
+  </main>
+
+    <script src="../menu.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

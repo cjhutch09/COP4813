@@ -1,0 +1,173 @@
+{
+  "team": "Houston Rockets",
+  "range": {
+    "start_year": 2000,
+    "end_year": 2026
+  },
+  "statistic": "Points per game (PPG)",
+  "note": "One record represents a player-season. Years are NBA season labels.",
+  "players": [
+    {
+      "name": "Steve Francis",
+      "season": "1999-00",
+      "year": 2000,
+      "avg_scoring_ppg": 18.0
+    },
+    {
+      "name": "Cuttino Mobley",
+      "season": "1999-00",
+      "year": 2000,
+      "avg_scoring_ppg": 15.8
+    },
+    {
+      "name": "Shane Battier",
+      "season": "2006-07",
+      "year": 2007,
+      "avg_scoring_ppg": 10.1
+    },
+    {
+      "name": "Tracy McGrady",
+      "season": "2004-05",
+      "year": 2005,
+      "avg_scoring_ppg": 25.7
+    },
+    {
+      "name": "Yao Ming",
+      "season": "2004-05",
+      "year": 2005,
+      "avg_scoring_ppg": 18.3
+    },
+    {
+      "name": "Luis Scola",
+      "season": "2007-08",
+      "year": 2008,
+      "avg_scoring_ppg": 10.3
+    },
+    {
+      "name": "Kyle Lowry",
+      "season": "2011-12",
+      "year": 2012,
+      "avg_scoring_ppg": 14.3
+    },
+    {
+      "name": "James Harden",
+      "season": "2012-13",
+      "year": 2013,
+      "avg_scoring_ppg": 25.9
+    },
+    {
+      "name": "Dwight Howard",
+      "season": "2013-14",
+      "year": 2014,
+      "avg_scoring_ppg": 18.3
+    },
+    {
+      "name": "Trevor Ariza",
+      "season": "2014-15",
+      "year": 2015,
+      "avg_scoring_ppg": 12.8
+    },
+    {
+      "name": "Eric Gordon",
+      "season": "2016-17",
+      "year": 2017,
+      "avg_scoring_ppg": 16.8
+    },
+    {
+      "name": "Chris Paul",
+      "season": "2017-18",
+      "year": 2018,
+      "avg_scoring_ppg": 18.6
+    },
+    {
+      "name": "Clint Capela",
+      "season": "2017-18",
+      "year": 2018,
+      "avg_scoring_ppg": 13.9
+    },
+    {
+      "name": "Russell Westbrook",
+      "season": "2019-20",
+      "year": 2020,
+      "avg_scoring_ppg": 27.2
+    },
+    {
+      "name": "John Wall",
+      "season": "2020-21",
+      "year": 2021,
+      "avg_scoring_ppg": 20.6
+    },
+    {
+      "name": "Christian Wood",
+      "season": "2020-21",
+      "year": 2021,
+      "avg_scoring_ppg": 21.0
+    },
+    {
+      "name": "Jalen Green",
+      "season": "2021-22",
+      "year": 2022,
+      "avg_scoring_ppg": 17.3
+    },
+    {
+      "name": "Alperen Sengun",
+      "season": "2022-23",
+      "year": 2023,
+      "avg_scoring_ppg": 15.0
+    },
+    {
+      "name": "Jabari Smith Jr.",
+      "season": "2022-23",
+      "year": 2023,
+      "avg_scoring_ppg": 12.8
+    },
+    {
+      "name": "Fred VanVleet",
+      "season": "2023-24",
+      "year": 2024,
+      "avg_scoring_ppg": 17.4
+    },
+    {
+      "name": "Dillon Brooks",
+      "season": "2023-24",
+      "year": 2024,
+      "avg_scoring_ppg": 12.7
+    },
+    {
+      "name": "Amen Thompson",
+      "season": "2024-25",
+      "year": 2025,
+      "avg_scoring_ppg": 14.1
+    },
+    {
+      "name": "Alperen Sengun",
+      "season": "2024-25",
+      "year": 2025,
+      "avg_scoring_ppg": 19.1
+    },
+    {
+      "name": "Jalen Green",
+      "season": "2024-25",
+      "year": 2025,
+      "avg_scoring_ppg": 21.0
+    },
+    {
+      "name": "Kevin Durant",
+      "season": "2025-26",
+      "year": 2026,
+      "avg_scoring_ppg": 26.0
+    },
+    {
+      "name": "Alperen Sengun",
+      "season": "2025-26",
+      "year": 2026,
+      "avg_scoring_ppg": 20.4
+    },
+    {
+      "name": "Amen Thompson",
+      "season": "2025-26",
+      "year": 2026,
+      "avg_scoring_ppg": 18.3
+    }
+  ]
+}

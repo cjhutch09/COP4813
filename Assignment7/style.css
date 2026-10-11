@@ -1,0 +1,232 @@
+:root {
+  color-scheme: dark;
+  --felt: #0b5b46;
+  --felt-dark: #073c31;
+  --panel: rgba(3, 31, 26, 0.72);
+  --line: rgba(255, 255, 255, 0.16);
+  --text: #f5f7f3;
+  --muted: #f5f7f3;
+  --gold: #f4c76b;
+}
+
+* { box-sizing: border-box; }
+
+
+main { 
+width: min(95%, 95%);
+height: auto;
+ margin: 0 auto; 
+ border-radius: 9px;
+  background: var(--panel);
+ padding: 24px clamp(14px, 3vw, 42px) 44px; 
+ }
+
+.stat {
+  padding: 50px 17px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--panel);
+}
+
+.box {
+  padding: 5px 17px;
+  margin-top: 25px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--panel);
+  margin-left: 35%;
+  width: 30%;
+  content-align: center;
+}
+.stat-label { 
+display: block;
+ margin-bottom: 3px; 
+ color: var(--muted);
+ font-size: 0.76rem; 
+ }
+.stat strong {
+	font-size: 1.45rem;
+}
+
+
+.discard-area {
+	position:relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 19px;
+  margin-bottom: 30px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+.discard-copy { 
+min-width: 190px; 
+min-height: 150px;}
+.discard-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 260px;
+  min-width: 240px;
+}
+.decision-prompt { margin: 0; color: var(--muted); font-size: 0.85rem; }
+.decision-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.primary-button, .secondary-button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--gold); 
+  color: #163329; 
+}
+
+.primary-button:disabled, .secondary-button:disabled { opacity: 0.45; cursor: not-allowed; }
+.discard-deal-button {
+	align-self: flex-start; 
+		margin-top: 10px;
+		width: 100px;
+}
+.discard-copy h3 { margin-bottom: 5px; font-size: 1.15rem; }
+.discard-copy p { margin-bottom: 0; color: var(--muted); font-size: 0.85rem; }
+.discard-pile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  width: 106px;
+  height: 148px;
+  border: 2px dashed rgba(244, 199, 107, 0.8);
+  border-radius: 10px;
+  background: rgba(244, 199, 107, 0.07);
+  color: var(--gold);
+  text-align: center;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+.discard-pile.drag-over { background: rgba(244, 199, 107, 0.22); border-style: solid; }
+.discard-placeholder { padding: 8px; font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; }
+.discard-pile .discard-top-card { width: 74px; height: auto; max-height: 112px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,.3)); }
+.discard-badge {
+  position: absolute;
+  right: -9px;
+  bottom: -9px;
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #163329;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.section-heading { 
+
+justify-content: space-between;
+ align-items: end; 
+ gap: 16px; 
+ margin-bottom: 15px; 
+ text-align: center;
+ }
+.section-heading h3 {
+	margin-bottom: 5px;
+	font-size: 1.3rem; }
+.section-heading p {
+	margin-bottom: 0;
+	color: var(--muted);
+	font-size: 0.88rem; }
+.deck-status {
+  position: absolute; 
+  top: 10px;         
+  right: 10px;        
+	padding: 6px 10px; 
+	border-radius: 99px; 
+	border: 1px solid var(--line);
+	font-size: 0.76rem; 
+	white-space: nowrap; 
+	}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 13px;
+  align-items: start;
+}
+.input{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin-left:40%;
+}
+.playing-card {
+  display: block;
+  width: 100%;
+  max-width: 125px;
+  justify-self: center;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  transition: transform 140ms ease, box-shadow 140ms ease, outline-color 140ms ease;
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+}
+.playing-card img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 7; object-fit: contain; pointer-events: none; }
+.playing-card:active { cursor: grabbing; }
+.playing-card.dragging { opacity: 0.35; transform: scale(0.96); }
+.playing-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.playing-card.hovered {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.32);
+  outline-color: rgba(244, 199, 107, 0.8);
+  z-index: 2;
+}
+.empty-state { grid-column: 1 / -1; padding: 60px 20px; text-align: center; border: 1px dashed var(--line); border-radius: 18px; color: var(--muted); }
+.empty-state h3 { margin: 10px 0 7px; color: var(--text); }
+.empty-state p { margin-bottom: 0; }
+.empty-icon { color: var(--gold); font-size: 2.4rem; }
+
+
+@media (max-width: 650px) {
+  .game-message { flex-basis: 100%; margin: 0; }
+  .discard-area { gap: 15px; }
+  .discard-copy { flex: 1; }
+  .discard-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 1 260px;
+  min-width: 240px;
+}
+.decision-prompt { margin: 0; color: var(--muted); font-size: 0.85rem; }
+.decision-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.primary-button, .secondary-button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.primary-button { background: var(--gold); color: #163329; }
+.secondary-button {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+.primary-button:disabled, .secondary-button:disabled { opacity: 0.45; cursor: not-allowed; }
+.discard-deal-button { align-self: flex-start; margin-bottom: 40px; }
+  .discard-pile { width: 88px; height: 123px; }
+  .card-grid { grid-template-columns: repeat(auto-fill, minmax(74px, 1fr)); gap: 9px; place-content: center;  }
+}

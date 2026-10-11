@@ -1,0 +1,35 @@
+.card-grid {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+
+
+
+.playing-card.selected {
+  outline: 3px solid #f4c76b;
+  outline-offset: 3px;
+}
+
+.playing-card.dragging {
+  opacity: 0.45;
+  transform: scale(0.6);
+}
+
+.discard-pile.drag-over {
+  outline: 3px dashed #f4c76b;
+  outline-offset: 4px;
+  background-color: rgba(244, 199, 107, 0.16);
+}
+
+.discard-top-card.pending-card {
+  outline: 3px solid #f4c76b;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+

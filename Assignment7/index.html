@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style_fixed.css">
+
+</head>
+
+
+<body>
+
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Assignment 7</h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub" id= "assignments">
+
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+
+  <main>
+
+    <section class="discard-area" aria-label="Discard area">
+	<span id="deckStatus" class="deck-status">No cards dealt yet</span>
+      <div class="discard-copy">
+	        <div class="stat">
+        <span class="stat-label">Discarded</span>
+        <strong id="discardCount">0</strong>
+      </div>
+      </div>
+      <div id="discardPile" class="discard-pile" role="region">
+        <span class="discard-placeholder">DROP CARD HERE</span>
+      </div>
+      <div class="discard-actions">
+        <p class="decision-prompt" id="decisionPrompt">Discard a card to choose whether to draw a replacement.</p>
+	          <div class="decision-buttons">
+          <button id="drawReplacementButton" class="primary-button" type="button" disabled>Discard &amp; Draw</button>
+          <button id="discardOnlyButton" class="secondary-button" type="button" disabled>Discard Only</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="cards-section" >
+
+      <div id="cardGrid" class="card-grid">
+        <div class="empty-state">
+
+        </div>
+      </div>
+    </section>
+		 <div class="box">
+	 <button id="dealButton" class="primary-button discard-deal-button" type="button">Deal</button>
+	 <div>
+	 <p>Select how many cards to deal</p>
+	 <input type="number" id="cardCount" min="1" max="52" value="5">
+	</div>
+	</div>
+  </main>
+
+</body>
+	<script src="../menu.js"></script>
+    <script src="script.js"></script>
+</html>

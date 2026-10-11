@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+<div class="wrap">
+<nav>
+  <ul class="primary">
+  <h2>Assignment 7</h2>
+    <li>
+      <a href="">My Classes</a>
+      <ul class="sub">
+        <li><a href="https://class.daytonastate.edu/d2l/home/510960">Linux Administration</a></li>
+        <li><a href="https://class.daytonastate.edu/d2l/home/511809">Web Systems I</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">My Assignments</a>
+      <ul class="sub" id= "assignments">
+
+      </ul>
+    </li>
+	<li>
+      <a href="">Useful Websites</a>
+      <ul class="sub">
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</div>
+
+
+  <main>
+    <section class="table-tools" aria-label="Game status">
+
+
+      <p id="gameMessage" class="game-message" aria-live="polite">Press Deal to shuffle and lay out all 52 cards.</p>
+    </section>
+        <button id="dealButton" class="primary-button discard-deal-button" type="button">Deal</button>
+
+    <section class="discard-area" aria-label="Discard area">
+	<span id="deckStatus" class="deck-status">No cards dealt yet</span>
+      <div class="discard-copy">
+	        <div class="stat">
+        <span class="stat-label">Discarded</span>
+        <strong id="discardCount">0</strong>
+      </div>
+        <p>Drag a card here to discard it, then choose whether to draw a replacement.</p>
+      </div>
+      <div id="discardPile" class="discard-pile" role="region" aria-label="Drop cards here to discard">
+        <span class="discard-placeholder">DROP CARD HERE</span>
+      </div>
+      <div class="discard-actions" aria-label="Discard decision">
+        <p class="decision-prompt" id="decisionPrompt">Discard a card to choose whether to draw a replacement.</p>
+
+      </div>
+	          <div class="decision-buttons">
+          <button id="drawReplacementButton" class="primary-button" type="button" disabled>Discard &amp; Draw</button>
+          <button id="discardOnlyButton" class="secondary-button" type="button" disabled>Discard Only</button>
+        </div>
+
+    </section>
+
+    <section class="cards-section" aria-labelledby="cardsHeading">
+      <div class="section-heading">
+        <div>
+          <h3 id="cardsHeading">Cards in Play</h3>
+        </div>
+      </div>
+      <div id="cardGrid" class="card-grid" aria-label="Cards in play">
+        <div class="empty-state">
+          <span class="empty-icon">🂠</span>
+          <h3>Your table is ready</h3>
+          <p>Select <strong>Deal</strong> to display a shuffled standard deck.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+	<script src="../menu.js"></script>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,87 @@
+/* Optional modern redesign for BSIT Quick Class Planner.
+   This file is intentionally NOT linked from index.html. To preview it, change
+   the stylesheet link in index.html from styles.css to styles-modern.css. */
+:root {
+  color-scheme: light;
+  --ink: #172033;
+  --muted: #64748b;
+  --line: #dce4ef;
+  --green: #dcfce7;
+  --green-strong: #16a34a;
+  --yellow: #fef3c7;
+  --blue: #dbeafe;
+  --paper: #f8fafc;
+  --surface: #ffffff;
+  --accent: #4f46e5;
+  --accent-dark: #3730a3;
+  --shadow: 0 12px 30px rgba(15, 23, 42, .08);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, #eef2ff 0, #f8fafc 48%, #f1f5f9 100%);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+.page { width: min(1560px, 96%); margin: 0 auto; padding: 32px 0 48px; }
+.page-header { text-align: center; margin-bottom: 28px; }
+h1 { margin: 8px 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; letter-spacing: -.045em; font-weight: 800; color: #111827; }
+.intro { max-width: 760px; margin: 0 auto 12px; color: var(--muted); }
+.help { display: inline-block; max-width: 760px; margin-top: 10px; text-align: left; }
+.help summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+.help p { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); }
+.legend { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 14px; margin: 22px 0; }
+.legend-card, .legend-actions { min-height: 72px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; box-shadow: var(--shadow); }
+.green { background: var(--green); }
+.yellow { background: var(--yellow); }
+.legend-actions { gap: 9px; flex-wrap: wrap; background: var(--surface); }
+.button { border: 1px solid transparent; border-radius: 10px; padding: 10px 15px; background: var(--accent); color: white; font: inherit; font-weight: 700; cursor: pointer; transition: background .15s ease, transform .15s ease, box-shadow .15s ease; }
+.button:hover:not(:disabled) { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 5px 12px #4f46e133; }
+.button:focus-visible, input:focus-visible, select:focus-visible, .course:focus-visible { outline: 3px solid #818cf8; outline-offset: 3px; }
+.button:disabled { opacity: .45; cursor: not-allowed; }
+.button.secondary { background: #f1f5f9; border-color: var(--line); color: #334155; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px 0; }
+.summary > div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: var(--shadow); }
+.summary-label { color: var(--muted); }
+.summary strong { font-size: 1.25rem; letter-spacing: -.02em; }
+.planner-grid { display: grid; grid-template-columns: minmax(230px, 1fr) minmax(300px, 1.2fr) minmax(300px, 1.3fr); gap: 18px; align-items: start; }
+.drop-panel, .semester-panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+.panel-heading { min-height: 78px; padding: 17px 18px; background: linear-gradient(135deg, #1e293b, #334155); color: white; }
+.panel-heading h2 { margin: 0 0 4px; font-size: 1.1rem; letter-spacing: -.015em; }
+.panel-heading span { color: #cbd5e1; font-size: .86rem; }
+.drop-zone, .semester-list { min-height: 350px; max-height: 70vh; overflow-y: auto; padding: 13px; background: #f8fafc; }
+.drop-zone.drag-over, .semester.drop-over { outline: 3px dashed var(--green-strong); outline-offset: -6px; background: #f0fdf4; }
+.catalog-tools { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 8px 10px; padding: 13px; background: #f1f5f9; border-bottom: 1px solid var(--line); }
+.catalog-tools label { font-size: .86rem; color: #475569; font-weight: 700; }
+.catalog-tools input, .catalog-tools select { width: 100%; min-width: 0; padding: 10px 11px; border: 1px solid #cbd5e1; border-radius: 9px; font: inherit; background: white; color: var(--ink); }
+.catalog-zone { max-height: 62vh; }
+.course { position: relative; margin: 0 0 11px; padding: 13px 14px; border: 1px solid #cbd5e1; border-left: 5px solid #94a3b8; border-radius: 12px; cursor: grab; min-height: 78px; background: white; box-shadow: 0 3px 9px rgba(15, 23, 42, .045); transition: box-shadow .15s ease, transform .15s ease; }
+.course:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(15, 23, 42, .09); }
+.course:active { cursor: grabbing; }
+.course.available { background: #f0fdf4; border-left-color: #22c55e; }
+.course.blocked { background: #fffbeb; border-left-color: #f59e0b; }
+.course.completed { background: #eff6ff; border-left-color: #3b82f6; }
+.course.planned { background: #f5f3ff; border-left-color: #8b5cf6; }
+.course-code { display: block; font-weight: 800; font-size: .98rem; color: #1e293b; }
+.course-name { display: block; font-weight: 650; }
+.course-meta { display: block; margin-top: 4px; color: #64748b; font-size: .78rem; }
+.course-details { display: block; margin-top: 6px; color: #475569; font-size: .8rem; }
+.empty-message { margin: 22px 8px; color: #94a3b8; text-align: center; font-style: italic; }
+.semester-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.semester { min-width: 0; min-height: 160px; padding: 11px; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.semester h3 { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; font-size: .98rem; }
+.semester h3 small { display: block; color: var(--muted); font-weight: 500; }
+.semester .course { padding: 10px; min-height: 0; }
+.status { min-height: 24px; margin: 15px 2px; color: #475569; }
+footer { margin-top: 24px; padding-top: 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+.results-dialog { width: min(620px, calc(100% - 28px)); max-height: 85vh; border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 24px 70px #0f172a40; }
+.results-dialog::backdrop { background: #0f172a88; backdrop-filter: blur(3px); }
+.dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.dialog-header h2 { margin: 0; }
+.close-button { border: 0; background: transparent; color: #64748b; font-size: 1.8rem; cursor: pointer; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+.available-result { padding: 11px 12px; margin: 7px 0; border: 1px solid #bbf7d0; border-radius: 10px; background: #f0fdf4; }
+@media (max-width: 1080px) { .planner-grid { grid-template-columns: 1fr 1fr; } .semester-panel { grid-column: 1 / -1; } .semester-list { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 680px) { .page { width: 94%; padding-top: 16px; } .legend, .summary, .planner-grid { grid-template-columns: 1fr; } .semester-panel { grid-column: auto; } .legend-card, .legend-actions { min-height: 58px; } .summary > div { padding: 12px 14px; } .drop-zone, .catalog-zone { max-height: 55vh; min-height: 180px; } .semester-list { grid-template-columns: 1fr 1fr; max-height: none; } }
+@media print { body { background: white; } .page { width: 100%; padding: 0; } .legend, .catalog-tools, .catalog-panel, .help, footer, .status, .dialog-actions, .close-button { display: none !important; } .planner-grid { display: block; } .completed-panel, .semester-panel { break-inside: avoid; margin-bottom: 15px; } .drop-zone, .semester-list { max-height: none; overflow: visible; background: white; } .semester-list { grid-template-columns: repeat(3, 1fr); } .course { break-inside: avoid; } }

@@ -1,0 +1,225 @@
+{
+  "courses": [
+    {
+      "Course": "ACG3101",
+      "Name": "Intermediate Accounting I",
+	  "PreReq": [
+        "ACG2071"
+		"MAC2233"
+      ],
+      "PRMet": true,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": false,
+      "offered": "Spring, Fall",
+      "details": "This course is the first of a three-course sequence on the theory and applications of the accounting process, standards, and regulations"
+    },
+    {
+      "Course": "ACG3113 ",
+      "Name": "Intermediate Accounting II",
+      "PreReq": [
+        "ACG3101"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": false,
+      "offered": "Spring, Fall",
+      "details": "This course is the second of a three-course sequence on the theory and applications of the accounting process, standards, and regulations"
+    },
+    {
+      "Course": "MAC1140",
+      "Name": "Pre-Calculus",
+      "PreReq": [
+        "MAC1105"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": false,
+      "offered": "Spring, Fall, Summer",
+      "details": "Prerequisite for the calculus requirement"
+    },
+    {
+      "Course": "ACG3123",
+      "Name": "Intermediate Accounting III",
+      "PreReq": [
+        "ACG3113"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 4,
+      "required": true,
+      "program": false,
+      "offered": "Spring, Fall",
+      "details": "This course is the third of a three-course sequence on the theory and applications of the accounting process, standards, and regulations."
+    },
+    {
+      "Course": "ACG3341",
+      "Name": "Cost Accounting",
+      "PreReq": [
+        "ACG3113"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": false,
+      "offered": "Spring, Fall",
+      "details": "This course provides a study of the relationship of cost accounting to the control and decision-making functions of management"
+    },
+    {
+      "Course": "ACG4401",
+      "Name": "Accounting Information Systems",
+	  "PreReq": [
+        "ACG2071"
+      ],
+      "PRMet": true,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring",
+      "details": "This course provides a foundation in accounting information systems for a business organization."
+    },
+    {
+      "Course": "ACG4501",
+      "Name": "Governmental and Nonprofit Accounting",
+      "PreReq": [
+        "ACG3123"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Spring",
+      "details": "This course is an examination of budgeting, accounting, reporting standards and practices for governmental and nonprofit entities."
+    },
+    {
+      "Course": "ACG4632",
+      "Name": "Auditing",
+      "PreReq": [
+        "ACG3123"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Spring",
+      "details": "This course is an introduction to the basic concepts, principles and environment of financial statement auditing."
+    },
+    {
+      "Course": "BUL3130",
+      "Name": "Legal, Ethical, and Social Aspects of Business",
+      "PreReq": [
+        "GEB3213"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring, Summer",
+      "details": "This course explores the nature of legal, ethical, and societal environments of business. Emphasis is placed on business's social, legal, political, and ethical responsibilities to both external and internal groups in business."
+    },
+    {
+      "Course": "FIN3403",
+      "Name": "Business Finance",
+      "PreReq": [
+        "ACG2071",
+		"ECO2013"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring",
+      "details": "This course is an introduction to financial analysis and decision-making from a managerial perspective."
+    },
+    {
+      "Course": "GEB3213",
+      "Name": "Business Writing",
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring, Summer",
+      "details": "This course emphasizes the basics of business writing while reviewing the various kinds of written business correspondence. "
+    },
+    {
+      "Course": "MAN3353",
+      "Name": "Management Theory and Practices",
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring, Summer",
+      "details": "This course examines management theory, relevant applications and cases, self-management, teamwork, global awareness, and communication for the development of management competencies."
+    },
+    {
+      "Course": "MAN4504",
+      "Name": "Operational Decision Making",
+      "PreReq": [
+        "GEB3213"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Fall, Spring, Summer",
+      "details": "This course focuses on operational decision-making management techniques to improve the processes and productivity in organizations."
+    },
+    {
+      "Course": "TAX3001",
+      "Name": "Federal Income Tax",
+      "PreReq": [
+        "ACG2071"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Spring",
+      "details": "This course is an introduction to federal income taxation focused on providing a basic understanding of the federal income tax laws as they relate to individuals and businesses."
+    },
+    {
+      "Course": "TAX3011",
+      "Name": "Taxation of Business Organizations",
+      "PreReq": [
+        "TAX3001"
+      ],
+      "PRMet": false,
+      "taken": false,
+      "semester": 0,
+      "hours": 3,
+      "required": true,
+      "program": true,
+      "offered": "Spring",
+      "details": "This course covers concepts and methods of determining income for corporations, partnerships, estates and trusts for tax purposes, including interpretation of the internal revenue code, related regulations, and tax advisory services."
+    }
+  ]
+}

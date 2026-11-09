@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const assignmentList = document.querySelector("#assignments-menu");
   const assignments = ["Assignment1", "Assignment2", "Assignment3", "Assignment4","Assignment5", "Assignment6",
-  "Assignment7", "Assignment9", "Assignment10"];
+  "Assignment7", "Assignment9", "Assignment10", "Assignment11"];
 
   assignments.forEach((assignment) => {
     const item = document.createElement("li");

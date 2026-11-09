@@ -3,9 +3,9 @@
     {
       "Course": "ACG3101",
       "Name": "Intermediate Accounting I",
-	  "PreReq": [
-        "ACG2071"
-		"MAC2233"
+      "PreReq": [
+        "ACG2071",
+        "MAC2233"
       ],
       "PRMet": true,
       "taken": false,
@@ -79,7 +79,7 @@
     {
       "Course": "ACG4401",
       "Name": "Accounting Information Systems",
-	  "PreReq": [
+      "PreReq": [
         "ACG2071"
       ],
       "PRMet": true,
@@ -141,7 +141,7 @@
       "Name": "Business Finance",
       "PreReq": [
         "ACG2071",
-		"ECO2013"
+        "ECO2013"
       ],
       "PRMet": false,
       "taken": false,

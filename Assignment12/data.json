@@ -1,0 +1,234 @@
+[
+  {
+    "name": "WordPress",
+    "support": "Open-source software; maintained by the WordPress open-source project and supported by a large hosting and developer ecosystem.",
+    "supportSource": {
+      "label": "WordPress.org",
+      "url": "https://wordpress.org/"
+    },
+    "technology": "Server: PHP. Database: MySQL or MariaDB. Client: HTML, CSS and JavaScript; themes control presentation and plugins extend functionality.",
+    "technologySource": {
+      "label": "Official requirements",
+      "url": "https://wordpress.org/about/requirements/"
+    },
+    "capabilities": "Themes and plugins; visual/block editing; custom post types; REST API; large ecosystem for commerce, SEO, forms and multilingual sites.",
+    "capabilitiesSource": {
+      "label": "WordPress developer resources",
+      "url": "https://developer.wordpress.org/"
+    },
+    "limitations": "Site owners must manage hosting and updates for self-hosted installs. Third-party plugins/themes can introduce compatibility, performance and security risks; advanced customization may require PHP knowledge.",
+    "limitationsSource": {
+      "label": "Security guidance",
+      "url": "https://wordpress.org/documentation/article/hardening-wordpress/"
+    },
+    "examples": [
+      {
+        "label": "WordPress.org",
+        "url": "https://wordpress.org/"
+      }
+    ]
+  },
+  {
+    "name": "Drupal",
+    "support": "Open-source software supported by the Drupal community and commercial service providers.",
+    "supportSource": {
+      "label": "Drupal.org",
+      "url": "https://www.drupal.org/"
+    },
+    "technology": "Server: PHP. Database: MySQL/MariaDB, PostgreSQL or SQLite (version-dependent). Client: HTML, CSS and JavaScript; commonly extended with Composer-managed modules.",
+    "technologySource": {
+      "label": "System requirements",
+      "url": "https://www.drupal.org/docs/getting-started/system-requirements"
+    },
+    "capabilities": "Flexible content types and fields; roles and permissions; taxonomy; multilingual publishing; contributed modules; APIs and structured content for complex sites.",
+    "capabilitiesSource": {
+      "label": "Drupal documentation",
+      "url": "https://www.drupal.org/docs"
+    },
+    "limitations": "More complex to build and administer than simpler site builders. Module compatibility, upgrades and configuration can require specialist development and ongoing maintenance.",
+    "limitationsSource": {
+      "label": "Upgrade and maintenance documentation",
+      "url": "https://www.drupal.org/docs/upgrading-drupal"
+    },
+    "examples": [
+      {
+        "label": "Drupal.org",
+        "url": "https://www.drupal.org/"
+      }
+    ]
+  },
+  {
+    "name": "Joomla",
+    "support": "Open-source CMS maintained by the Joomla project and supported by its community and service providers.",
+    "supportSource": {
+      "label": "Joomla.org",
+      "url": "https://www.joomla.org/"
+    },
+    "technology": "Server: PHP. Database: MySQL, MariaDB or PostgreSQL (supported versions vary). Client: HTML, CSS and JavaScript, with templates and extensions.",
+    "technologySource": {
+      "label": "Technical requirements",
+      "url": "https://manual.joomla.org/docs/next/get-started/technical-requirements/"
+    },
+    "capabilities": "Template-based design; extensions; multilingual features; user groups and access control; custom fields; menu management and built-in content workflows.",
+    "capabilitiesSource": {
+      "label": "Joomla documentation",
+      "url": "https://docs.joomla.org/"
+    },
+    "limitations": "Smaller extension and theme ecosystem than WordPress. Major-version upgrades and third-party extensions can require compatibility checks and technical administration.",
+    "limitationsSource": {
+      "label": "Joomla documentation",
+      "url": "https://docs.joomla.org/"
+    },
+    "examples": [
+      {
+        "label": "Joomla.org",
+        "url": "https://www.joomla.org/"
+      }
+    ]
+  },
+  {
+    "name": "Wix CMS",
+    "support": "Commercial, hosted website-building platform provided by Wix; core platform is proprietary.",
+    "supportSource": {
+      "label": "Wix",
+      "url": "https://www.wix.com/"
+    },
+    "technology": "Managed cloud platform. Browser-based visual editor and CMS collections; front-end components can be connected to structured content. Wix does not publish a complete underlying server/database stack.",
+    "technologySource": {
+      "label": "Wix CMS overview",
+      "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
+    },
+    "capabilities": "Visual site builder; CMS collections and dynamic pages; connected repeaters and forms; hosting and platform maintenance handled by Wix; built-in SEO and app integrations.",
+    "capabilitiesSource": {
+      "label": "Wix CMS overview",
+      "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
+    },
+    "limitations": "Less server-level control than self-hosted systems; portability and migration can be limited; advanced custom behavior is constrained by the platform's supported APIs and editor model.",
+    "limitationsSource": {
+      "label": "Wix help center",
+      "url": "https://support.wix.com/"
+    },
+    "examples": [
+      {
+        "label": "Wix website examples",
+        "url": "https://www.wix.com/blog/website-examples"
+      }
+    ]
+  },
+  {
+    "name": "Shopify",
+    "support": "Commercial hosted e-commerce platform operated by Shopify; subscription-based service with an app and partner ecosystem.",
+    "supportSource": {
+      "label": "Shopify",
+      "url": "https://www.shopify.com/"
+    },
+    "technology": "Hosted SaaS platform. Themes commonly use Liquid templates, HTML, CSS and JavaScript; store data is managed by Shopify. Storefront and Admin APIs support integrations.",
+    "technologySource": {
+      "label": "Shopify developer documentation",
+      "url": "https://shopify.dev/docs"
+    },
+    "capabilities": "Product catalog and inventory; checkout and payments integrations; themes; apps; sales channels; order management; storefront customization and APIs.",
+    "capabilitiesSource": {
+      "label": "Shopify platform features",
+      "url": "https://www.shopify.com/online"
+    },
+    "limitations": "Optimized primarily for commerce rather than general-purpose publishing. Subscription and app costs can add up; platform rules and checkout/database access limit low-level control.",
+    "limitationsSource": {
+      "label": "Shopify plans",
+      "url": "https://www.shopify.com/pricing"
+    },
+    "examples": [
+      {
+        "label": "Allbirds",
+        "url": "https://www.allbirds.com/"
+      }
+    ]
+  },
+  {
+    "name": "Ghost",
+    "support": "Open-source publishing platform; users can self-host or purchase managed hosting through Ghost(Pro).",
+    "supportSource": {
+      "label": "Ghost",
+      "url": "https://ghost.org/"
+    },
+    "technology": "Server: Node.js. Database: MySQL in supported production deployments. Client: HTML, CSS and JavaScript; themes use Handlebars templates and content is accessible through APIs.",
+    "technologySource": {
+      "label": "Ghost developer documentation",
+      "url": "https://ghost.org/docs/"
+    },
+    "capabilities": "Publishing and memberships; newsletters; paid subscriptions; editorial workflows; themes; integrations and Content API/Admin API.",
+    "capabilitiesSource": {
+      "label": "Ghost features",
+      "url": "https://ghost.org/features/"
+    },
+    "limitations": "Focused on publishing, newsletters and memberships rather than broad enterprise content modeling. Self-hosting requires server administration; some integrations or advanced features may need external services.",
+    "limitationsSource": {
+      "label": "Ghost documentation",
+      "url": "https://ghost.org/docs/"
+    },
+    "examples": [
+      {
+        "label": "The Browser",
+        "url": "https://thebrowser.com/"
+      }
+    ]
+  },
+  {
+    "name": "Contentful",
+    "support": "Commercial cloud-based headless content platform operated by Contentful, with plans and developer tooling for teams.",
+    "supportSource": {
+      "label": "Contentful",
+      "url": "https://www.contentful.com/"
+    },
+    "technology": "API-first hosted service with structured content delivered through HTTP APIs, including JSON responses. Front-end can be built with JavaScript or other languages; the customer chooses the presentation stack.",
+    "technologySource": {
+      "label": "Technology and features",
+      "url": "https://www.contentful.com/help/faq/technology-and-features/"
+    },
+    "capabilities": "Structured reusable content models; headless delivery across websites and apps; APIs and SDKs; localization; roles/workflows and integrations with modern front-end frameworks.",
+    "capabilitiesSource": {
+      "label": "Contentful platform",
+      "url": "https://www.contentful.com/platform/"
+    },
+    "limitations": "Does not provide a complete traditional website theme/editor experience by itself; a separate front-end is usually required. Cost and complexity can grow with usage, content modeling and integrations.",
+    "limitationsSource": {
+      "label": "Contentful pricing",
+      "url": "https://www.contentful.com/pricing/"
+    },
+    "examples": [
+      {
+        "label": "Contentful customer stories",
+        "url": "https://www.contentful.com/customers/"
+      }
+    ]
+  },
+  {
+    "name": "Umbraco",
+    "support": "Open-source .NET CMS with commercial cloud hosting and support options from Umbraco and its partner ecosystem.",
+    "supportSource": {
+      "label": "Umbraco",
+      "url": "https://umbraco.com/"
+    },
+    "technology": "Server: .NET/C#. Database: SQL Server or SQLite depending on setup. Client: HTML, CSS and JavaScript; Razor views and APIs support custom presentation.",
+    "technologySource": {
+      "label": "Umbraco requirements",
+      "url": "https://docs.umbraco.com/umbraco-cms/fundamentals/setup/requirements"
+    },
+    "capabilities": "Flexible content types; customizable back office; templates and extensions; multilingual content; APIs and integrations within the .NET ecosystem.",
+    "capabilitiesSource": {
+      "label": "Umbraco documentation",
+      "url": "https://docs.umbraco.com/"
+    },
+    "limitations": "Best suited to teams comfortable with .NET and its hosting ecosystem. More advanced implementations can require developer expertise; package compatibility should be checked during upgrades.",
+    "limitationsSource": {
+      "label": "Umbraco documentation",
+      "url": "https://docs.umbraco.com/"
+    },
+    "examples": [
+      {
+        "label": "Umbraco",
+        "url": "https://umbraco.com/"
+      }
+    ]
+  }
+]

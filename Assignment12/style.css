@@ -1,0 +1,89 @@
+/* Dark-green theme; the page contains only a title and comparison table. */
+:root {
+  color-scheme: light;
+  --green-950: #092f24;
+  --green-900: #104735;
+  --green-800: #176044;
+  --green-700: #247653;
+  --green-100: #e7f2eb;
+  --green-50: #f4f8f5;
+  --ink: #17251e;
+  --line: #c7d9ce;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--green-50);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+main {
+  width: min(1600px, 100%);
+  margin: 0 auto;
+  padding: 28px 22px 36px;
+}
+h1 {
+  margin: 0 0 20px;
+  color: var(--green-950);
+  font-size: clamp(1.55rem, 2.4vw, 2.25rem);
+  line-height: 1.2;
+}
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--green-800);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgb(9 47 36 / 9%);
+}
+table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+th, td {
+  padding: 15px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+th:last-child, td:last-child { border-right: 0; }
+tbody tr:last-child td { border-bottom: 0; }
+th {
+  background: var(--green-900);
+  color: #fff;
+  font-size: .95rem;
+  letter-spacing: .01em;
+}
+tbody tr:nth-child(even) { background: var(--green-50); }
+tbody tr:hover { background: var(--green-100); }
+td:first-child { color: var(--green-950); font-weight: 700; }
+th:nth-child(1) { width: 11%; }
+th:nth-child(2) { width: 15%; }
+th:nth-child(3) { width: 19%; }
+th:nth-child(4) { width: 20%; }
+th:nth-child(5) { width: 21%; }
+th:nth-child(6) { width: 14%; }
+a {
+  color: #075e3d;
+  font-weight: 600;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover, a:focus-visible { color: var(--green-950); }
+.source-link {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: .84rem;
+  font-weight: 500;
+}
+.example-link { display: block; margin-bottom: 8px; }
+.status { text-align: center; color: var(--green-900); }
+@media (max-width: 700px) {
+  main { padding: 20px 12px; }
+  h1 { margin-bottom: 15px; }
+}

@@ -6,7 +6,7 @@
       "label": "WordPress.org",
       "url": "https://wordpress.org/"
     },
-    "technology": "Server: PHP </br> Database: MySQL or MariaDB </br> Client: HTML, CSS and JavaScript; themes control presentation and plugins extend functionality.",
+    "technology": "Server: PHP \\n Database: MySQL or MariaDB \n Client: HTML, CSS and JavaScript; themes control presentation and plugins extend functionality.",
     "technologySource": {
       "label": "Official requirements",
       "url": "https://wordpress.org/about/requirements/"

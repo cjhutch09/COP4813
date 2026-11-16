@@ -1,12 +1,12 @@
 [
   {
     "name": "WordPress",
-    "support": "Open-source software; maintained by the WordPress open-source project and supported by a large hosting and developer ecosystem.",
+    "support": "Open-source software maintained and supported by a large hosting environment and developers",
     "supportSource": {
       "label": "WordPress.org",
       "url": "https://wordpress.org/"
     },
-    "technology": "Server: PHP \\n Database: MySQL or MariaDB \n Client: HTML, CSS and JavaScript; themes control presentation and plugins extend functionality.",
+    "technology": "Server: PHP </br> Database: MySQL or MariaDB </br> Client: HTML, CSS and JavaScript. Themes control presentation and plugins extend functionality.",
     "technologySource": {
       "label": "Official requirements",
       "url": "https://wordpress.org/about/requirements/"

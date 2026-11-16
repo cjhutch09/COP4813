@@ -1,51 +1,23 @@
 [
-  {
-    "name": "WordPress",
-    "support": "Open-source software maintained and supported by a large hosting environment and developers",
-    "supportSource": {
-      "label": "WordPress.org",
-      "url": "https://wordpress.org/"
-    },
-    "technology": "Server: PHP </br> Database: MySQL or MariaDB </br> Client: HTML, CSS and JavaScript. Themes control presentation and plugins extend functionality.",
-    "technologySource": {
-      "label": "Official requirements",
-      "url": "https://wordpress.org/about/requirements/"
-    },
-    "capabilities": "Themes and plugins; visual/block editing; custom post types; REST API; large ecosystem for commerce, SEO, forms and multilingual sites.",
-    "capabilitiesSource": {
-      "label": "WordPress developer resources",
-      "url": "https://developer.wordpress.org/"
-    },
-    "limitations": "Site owners must manage hosting and updates for self-hosted installs. Third-party plugins/themes can introduce compatibility, performance and security risks; advanced customization may require PHP knowledge.",
-    "limitationsSource": {
-      "label": "Security guidance",
-      "url": "https://wordpress.org/documentation/article/hardening-wordpress/"
-    },
-    "examples": [
-      {
-        "label": "WordPress.org",
-        "url": "https://wordpress.org/"
-      }
-    ]
-  },
+ 
   {
     "name": "Drupal",
-    "support": "Open-source software supported by the Drupal community and commercial service providers.",
+    "support": "Open-source software supported by the community and commercial service providers.",
     "supportSource": {
       "label": "Drupal.org",
       "url": "https://www.drupal.org/"
     },
-    "technology": "Server: PHP. Database: MySQL/MariaDB, PostgreSQL or SQLite (version-dependent). Client: HTML, CSS and JavaScript; commonly extended with Composer-managed modules.",
+    "technology": "Server: PHP. Database: MySQL/MariaDB, PostgreSQL, or SQLite. Client: HTML, CSS and JavaScript. Composer modules are used to extend functionality",
     "technologySource": {
       "label": "System requirements",
       "url": "https://www.drupal.org/docs/getting-started/system-requirements"
     },
-    "capabilities": "Flexible content types and fields; roles and permissions; taxonomy; multilingual publishing; contributed modules; APIs and structured content for complex sites.",
+    "capabilities": "Flexible content types and fields, roles and permissions, multilingual publishing, contributed modules, APIs and structured content for complex sites.",
     "capabilitiesSource": {
       "label": "Drupal documentation",
       "url": "https://www.drupal.org/docs"
     },
-    "limitations": "More complex to build and administer than simpler site builders. Module compatibility, upgrades and configuration can require specialist development and ongoing maintenance.",
+    "limitations": "More complex to build and administer than simpler site builders. Module compatibility, updates, and configuration can require some knowledge to maintain",
     "limitationsSource": {
       "label": "Upgrade and maintenance documentation",
       "url": "https://www.drupal.org/docs/upgrading-drupal"
@@ -59,22 +31,22 @@
   },
   {
     "name": "Joomla",
-    "support": "Open-source CMS maintained by the Joomla project and supported by its community and service providers.",
+    "support": "Open-source CMS maintained and supported by the community and service providers.",
     "supportSource": {
       "label": "Joomla.org",
       "url": "https://www.joomla.org/"
     },
-    "technology": "Server: PHP. Database: MySQL, MariaDB or PostgreSQL (supported versions vary). Client: HTML, CSS and JavaScript, with templates and extensions.",
+    "technology": "Server: PHP. Database: MySQL, MariaDB, or PostgreSQL. Client: HTML, CSS and JavaScript, with templates and extensions for further customization.",
     "technologySource": {
       "label": "Technical requirements",
       "url": "https://manual.joomla.org/docs/next/get-started/technical-requirements/"
     },
-    "capabilities": "Template-based design; extensions; multilingual features; user groups and access control; custom fields; menu management and built-in content workflows.",
+    "capabilities": "Template-based design, extensions, multilingual features, user groups and access control",
     "capabilitiesSource": {
       "label": "Joomla documentation",
       "url": "https://docs.joomla.org/"
     },
-    "limitations": "Smaller extension and theme ecosystem than WordPress. Major-version upgrades and third-party extensions can require compatibility checks and technical administration.",
+    "limitations": "Smaller extension and theme ecosystem than WordPress. Major-version upgrades and third-party extensions can require compatibility checks and are more advanced",
     "limitationsSource": {
       "label": "Joomla documentation",
       "url": "https://docs.joomla.org/"
@@ -87,8 +59,8 @@
     ]
   },
   {
-    "name": "Wix CMS",
-    "support": "Commercial, hosted website-building platform provided by Wix; core platform is proprietary.",
+    "name": "Wix",
+    "support": "Commercially operated website-building platform",
     "supportSource": {
       "label": "Wix",
       "url": "https://www.wix.com/"
@@ -98,12 +70,12 @@
       "label": "Wix CMS overview",
       "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
     },
-    "capabilities": "Visual site builder; CMS collections and dynamic pages; connected repeaters and forms; hosting and platform maintenance handled by Wix; built-in SEO and app integrations.",
+    "capabilities": "Visual site builder, CMS collections and dynamic pages, hosting and platform maintenance handled by Wix, built-in SEO and app integrations.",
     "capabilitiesSource": {
-      "label": "Wix CMS overview",
+      "label": "Wix overview",
       "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
     },
-    "limitations": "Less server-level control than self-hosted systems; portability and migration can be limited; advanced custom behavior is constrained by the platform's supported APIs and editor model.",
+    "limitations": "Less server control, limited portability/migration, custom behavior is limited to platform supported APIs and editor model.",
     "limitationsSource": {
       "label": "Wix help center",
       "url": "https://support.wix.com/"
@@ -117,12 +89,12 @@
   },
   {
     "name": "Shopify",
-    "support": "Commercial hosted e-commerce platform operated by Shopify; subscription-based service with an app and partner ecosystem.",
+    "support": "Commercial e-commerce subscription-based service.",
     "supportSource": {
       "label": "Shopify",
       "url": "https://www.shopify.com/"
     },
-    "technology": "Hosted SaaS platform. Themes commonly use Liquid templates, HTML, CSS and JavaScript; store data is managed by Shopify. Storefront and Admin APIs support integrations.",
+    "technology": "Hosted SaaS platform. Themes commonly use Liquid templates, HTML, CSS and JavaScript. store data is managed by Shopify. Storefront and Admin APIs support integrations.",
     "technologySource": {
       "label": "Shopify developer documentation",
       "url": "https://shopify.dev/docs"

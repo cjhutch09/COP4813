@@ -1,0 +1,149 @@
+[
+ 
+  {
+    "name": "Drupal",
+    "support": "Open-source software supported by the community and commercial service providers.",
+    "supportSource": {
+      "label": "Drupal.org",
+      "url": "https://www.drupal.org/"
+    },
+    "technology": "Server: PHP. Database: MySQL/MariaDB, PostgreSQL, or SQLite. Client: HTML, CSS and JavaScript. Composer modules are used to extend functionality",
+    "technologySource": {
+      "label": "System requirements",
+      "url": "https://www.drupal.org/docs/getting-started/system-requirements"
+    },
+    "capabilities": "Flexible content types and fields, roles and permissions, multilingual publishing, contributed modules, APIs and structured content for complex sites.",
+    "capabilitiesSource": {
+      "label": "Drupal documentation",
+      "url": "https://www.drupal.org/docs"
+    },
+    "limitations": "More complex to build and administer than simpler site builders. Module compatibility, updates, and configuration can require some knowledge to maintain",
+    "limitationsSource": {
+      "label": "Upgrade and maintenance documentation",
+      "url": "https://www.drupal.org/docs/upgrading-drupal"
+    },
+    "examples": [
+      {
+        "label": "Vanderbilt University Medical Center",
+        "url": "https://www.vumc.org/main/home"
+      }
+    ]
+  },
+  {
+    "name": "Joomla",
+    "support": "Open-source CMS maintained and supported by the community and service providers.",
+    "supportSource": {
+      "label": "Joomla.org",
+      "url": "https://www.joomla.org/"
+    },
+    "technology": "Server: PHP. Database: MySQL, MariaDB, or PostgreSQL. Client: HTML, CSS and JavaScript, with templates and extensions for further customization.",
+    "technologySource": {
+      "label": "Technical requirements",
+      "url": "https://manual.joomla.org/docs/next/get-started/technical-requirements/"
+    },
+    "capabilities": "Template-based design, extensions, multilingual features, user groups and access control",
+    "capabilitiesSource": {
+      "label": "Joomla documentation",
+      "url": "https://docs.joomla.org/"
+    },
+    "limitations": "Smaller extension and theme ecosystem than WordPress. Major-version upgrades and third-party extensions can require compatibility checks and are more advanced",
+    "limitationsSource": {
+      "label": "Joomla documentation",
+      "url": "https://docs.joomla.org/"
+    },
+    "examples": [
+      {
+        "label": "Nintendo (Nordic countries)",
+        "url": "https://www.nintendo.se/"
+      }
+    ]
+  },
+  {
+    "name": "Wix",
+    "support": "Commercially operated website-building platform",
+    "supportSource": {
+      "label": "Wix",
+      "url": "https://www.wix.com/"
+    },
+    "technology": "Managed cloud platform. Browser-based visual editor and CMS collections; front-end components can be connected to structured content. Wix does not publish a complete underlying server/database stack.",
+    "technologySource": {
+      "label": "Wix CMS overview",
+      "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
+    },
+    "capabilities": "Visual site builder, CMS collections and dynamic pages, hosting and platform maintenance handled by Wix, built-in SEO and app integrations.",
+    "capabilitiesSource": {
+      "label": "Wix overview",
+      "url": "https://support.wix.com/en/article/cms-content-management-system-an-overview"
+    },
+    "limitations": "Less server control, limited portability/migration, custom behavior is limited to platform supported APIs and editor model.",
+    "limitationsSource": {
+      "label": "Wix help center",
+      "url": "https://support.wix.com/"
+    },
+    "examples": [
+      {
+        "label": "Izzy Wheels",
+        "url": "https://www.izzywheels.com/"
+      }
+    ]
+  },
+  {
+    "name": "Shopify",
+    "support": "Commercial e-commerce subscription-based service.",
+    "supportSource": {
+      "label": "Shopify",
+      "url": "https://www.shopify.com/"
+    },
+    "technology": "Hosted SaaS platform. Themes commonly use Liquid templates, HTML, CSS and JavaScript. store data is managed by Shopify. Storefront and Admin APIs support integrations.",
+    "technologySource": {
+      "label": "Shopify developer documentation",
+      "url": "https://shopify.dev/docs"
+    },
+    "capabilities": "Product catalog and inventory, checkout and payment integrations, custom themes, apps, order management, storefront customization and other APIs.",
+    "capabilitiesSource": {
+      "label": "Shopify platform features",
+      "url": "https://www.shopify.com/online"
+    },
+    "limitations": "Optimized primarily for commerce. Platform rules and checkout/database access provide limited control over functionality.",
+    "limitationsSource": {
+      "label": "Shopify plans",
+      "url": "https://www.shopify.com/pricing"
+    },
+    "examples": [
+      {
+        "label": "Allbirds",
+        "url": "https://www.allbirds.com/"
+      }
+    ]
+  },
+  {
+    "name": "Ghost",
+    "support": "Open source publishing platform. users can self-host or purchase managed hosting through subscription services",
+    "supportSource": {
+      "label": "Ghost",
+      "url": "https://ghost.org/"
+    },
+    "technology": "Server: Node.js. Database: MySQL. Client: HTML, CSS and JavaScript. themes use templates and content is accessible through APIs.",
+    "technologySource": {
+      "label": "Ghost developer documentation",
+      "url": "https://ghost.org/docs/"
+    },
+    "capabilities": "Publishing, newsletters, subscription support, themes, integrations and Content API/Admin API.",
+    "capabilitiesSource": {
+      "label": "Ghost features",
+      "url": "https://ghost.org/features/"
+    },
+    "limitations": "Focused on publishing, newsletters and memberships rather than broad modeling, Self-hosting requires server administration, some integrations or advanced features require external services.",
+    "limitationsSource": {
+      "label": "Ghost documentation",
+      "url": "https://ghost.org/docs/"
+    },
+    "examples": [
+      {
+        "label": "The Browser",
+        "url": "https://thebrowser.com/"
+      }
+    ]
+  }
+  
+]

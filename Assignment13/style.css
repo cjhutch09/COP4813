@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  background: #111;
+  color: #fff;
+  padding: 32px 16px;
+}
+
+.game {
+  margin-left:34%;
+  width: 100%;
+  max-width: 440px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  width: 292px;
+  margin: 0 auto 12px;
+  font-size: 15px;
+}
+
+.play-area {
+  position: relative;
+  width: 292px;
+  height: 242px;
+  margin: 0 auto;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: #000;
+}
+
+.letter {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+}
+
+.letter:hover {
+  transform: scale(1.15);
+}
+
+.word-display {
+  min-height: 34px;
+  margin-top: 28px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.word-letter {
+  display: inline-block;
+  min-width: 18px;
+  color: #fff;
+}
+
+.word-letter.found {
+  color: #39d353;
+}
+
+.restart-button {
+  display: none;
+  margin: 24px auto 0;
+  padding: 7px 15px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background: #fff;
+  color: #111;
+}
+
+.game-over .restart-button {
+  display: block;
+}
+
+.game-over .play-area {
+  opacity: 0.55;
+}
